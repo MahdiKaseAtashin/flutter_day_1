@@ -2,9 +2,12 @@
 
 A new Flutter project.
 
-## Getting Started
+### Getting Started
 
-sample ui implementation with list and search view
+sample ui implementation with list and search bar view
+add font and assets
+get familiar with box decoration
+</br>
 
 ### Screenshots
 
