@@ -7,3 +7,5 @@ A new Flutter project.
 sample ui implementation with list and search view
 
 ### Screenshots
+
+![your-pic-caption-name](../_asset/picture_to_use.jpeg)
