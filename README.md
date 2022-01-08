@@ -8,4 +8,4 @@ sample ui implementation with list and search view
 
 ### Screenshots
 
-![your-pic-caption-name](../_asset/picture_to_use.jpeg)
+![app-screenshot](https://github.com/MahdiKaseAtashin/flutter_day_1/blob/main/ui_day_1/flutter_01.png)
