@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-void main() => runApp(const MaterialApp(
+void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      theme: ThemeData(fontFamily: 'Roboto'),
+      home: const Home(),
     ));
 
 class Home extends StatefulWidget {
@@ -45,10 +46,10 @@ class _HomeState extends State<Home> {
                 children: [
                   const Text('Day One :)',
                       style: TextStyle(color: Colors.black, fontSize: 25)),
-                  const SizedBox(height: 5),
+                  const SizedBox(height: 10),
                   const Text('Learning Flutter',
                       style: TextStyle(color: Colors.black, fontSize: 40)),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 25),
                   Container(
                     padding: const EdgeInsets.symmetric(vertical: 3),
                     decoration: BoxDecoration(
@@ -69,7 +70,69 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 15,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'DaalZaal',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                  ),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    height: 200,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        daalZaalCard('assets/images/1.PNG'),
+                        daalZaalCard('assets/images/2.PNG'),
+                        daalZaalCard('assets/images/3.PNG'),
+                        daalZaalCard('assets/images/4.PNG')
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 5),
+                  Container(
+                    height: 163,
+                    margin: EdgeInsets.only(top: 15),
+                    decoration: BoxDecoration(
+                      image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/images/5.PNG')),
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.green,
+                    ),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              begin: Alignment.bottomRight,
+                              stops: const [
+                                0.2,
+                                0.9
+                              ],
+                              colors: [
+                                Colors.black.withOpacity(.7),
+                                Colors.black.withOpacity(.2),
+                              ]),
+                          borderRadius: BorderRadius.circular(20)),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(160, 40, 0, 0),
+                    child: const Text(
+                      'Designed By Mahdi Kase Atashin',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                    ),
                   )
                 ],
               ),
@@ -79,4 +142,28 @@ class _HomeState extends State<Home> {
       ),
     );
   }
+}
+
+Widget daalZaalCard(image) {
+  return AspectRatio(
+    aspectRatio: 2 / 3,
+    child: Container(
+      margin: const EdgeInsets.only(right: 15),
+      decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover),
+          borderRadius: BorderRadius.circular(20)),
+      child: Container(
+        decoration: BoxDecoration(
+            gradient:
+                LinearGradient(begin: Alignment.bottomRight, stops: const [
+              0.2,
+              0.9
+            ], colors: [
+              Colors.black.withOpacity(.7),
+              Colors.black.withOpacity(.2),
+            ]),
+            borderRadius: BorderRadius.circular(20)),
+      ),
+    ),
+  );
 }
