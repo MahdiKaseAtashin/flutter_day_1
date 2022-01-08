@@ -11,4 +11,4 @@ sample ui implementation with list and search bar view
 
 ### Screenshots
 
-<img width="250" alt="app-screenshot" src="https://github.com/MahdiKaseAtashin/flutter_day_1/blob/main/ui_day_1/flutter_01.png">
+<img width="250" alt="app-screenshot" src="https://github.com/MahdiKaseAtashin/flutter_sample_list_view/blob/main/list_view/flutter_01.png">
