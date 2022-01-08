@@ -9,3 +9,4 @@ sample ui implementation with list and search view
 ### Screenshots
 
 ![app-screenshot](https://github.com/MahdiKaseAtashin/flutter_day_1/blob/main/ui_day_1/flutter_01.png =250x100)
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
